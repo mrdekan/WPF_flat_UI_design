@@ -5,9 +5,44 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WPF_flat_UI_design.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="#1b1b1b">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Discover"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="left"
+                   Margin="0,0,0,20"/>
+        <Border Width="645"
+                    Height="300"
+                    HorizontalAlignment="Left">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,645,300"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="World leader&#x0a;in global finance"
+                                   Foreground="White"
+                                   FontSize="30"
+                                   Margin="20,10,10,0"/>
+                        <TextBlock Text="Get started today!"
+                                   Foreground="White"
+                                   FontSize="22"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+                    <Image Width="300"
+                           Height="300"
+                           Source="/Images/main.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"/>
+                </Grid>
+            </Border>
+        </StackPanel>
 </UserControl>

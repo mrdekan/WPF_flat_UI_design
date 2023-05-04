@@ -10,12 +10,72 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
     <Border Background="#272537"
             CornerRadius="20">
+        <StackPanel>
+            <Border Background="Transparent" Height="25px" MouseDown="Border_MouseDown">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    <Button Width="40"
+                            Background="Transparent"
+                            BorderThickness="0" Click="Button_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="Transparent" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="Transparent" TargetName="Border" />
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                            <TextBlock Foreground="White"
+                                        FontSize="32"
+                                        Margin="0,-12,0,0">-</TextBlock>
+                    </Button>
+                    <Button Width="40"
+                            Margin="5,0,5,0"
+                            Background="Transparent"
+                            BorderThickness="0" Click="Button_Click_1">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="Transparent" />
+                                    <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="Transparent" TargetName="Border" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                        <TextBlock
+                            Foreground="White"
+                            FontSize="24"
+                            Margin="0,-8,0,0">x</TextBlock>
+                    </Button>
+                </StackPanel>
+            </Border>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -63,5 +123,6 @@
                             Margin="10"
                             Content="{Binding CurrentView}"/>
         </Grid>
+        </StackPanel>
     </Border>
 </Window>

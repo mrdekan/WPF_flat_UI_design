@@ -24,5 +24,21 @@ namespace WPF_flat_UI_design
 		{
 			InitializeComponent();
 		}
+
+		private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+		{
+			if(e.ChangedButton == MouseButton.Left)
+			{
+				this.DragMove();
+			}
+        }
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			this.WindowState = WindowState.Minimized;
+		}
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+		}
 	}
 }
