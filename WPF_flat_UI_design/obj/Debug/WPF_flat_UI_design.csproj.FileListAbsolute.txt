@@ -17,3 +17,8 @@ F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\WPF_flat_UI_design.pd
 F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\Theme\MenuButtonTheme.baml
 F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\App.baml
 F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\Theme\TextBoxTheme.baml
+F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\MVVM\View\HomeView.g.cs
+F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\MVVM\View\HomeView.baml
+F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\MVVM\View\DiscoveryView.g.cs
+F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\obj\Debug\MVVM\View\DiscoveryView.baml

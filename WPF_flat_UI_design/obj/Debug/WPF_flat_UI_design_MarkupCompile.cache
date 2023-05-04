@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\code\C#\WPF_flat_UI_design\WPF_flat_UI_design\App.xaml
-31124435136
+5-1353526089
 
-81523193229
+121426169152
 13-1310406943
-MainWindow.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+MainWindow.xaml;MVVM\View\DiscoveryView.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
-True
+False
 
